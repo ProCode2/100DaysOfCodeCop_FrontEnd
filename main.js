@@ -36,8 +36,8 @@ fetch("http://localhost:3000/whatsanapikey")
       report = `<div class="report-card">
             <div class="card-details">
               <h3><a href="https://twitter.com/${tweetedBy}/status/${tweetId}">The Tweet!</a></h3><br />
-              <h3>Tweeted By:   <a href="http://twitter.com/@${tweetedBy}">${tweetedBy}</a></h3><br />
-                <h3>Reported By:   <a href="https://twitter.com/@${reportedBy}">${reportedBy}</a></h3>
+              <h3>Tweeted By:   <a href="http://twitter.com/${tweetedBy}">${tweetedBy}</a></h3><br />
+                <h3>Reported By:   <a href="https://twitter.com/${reportedBy}">${reportedBy}</a></h3>
               </div>
           </div>`
           reports.innerHTML += report;
