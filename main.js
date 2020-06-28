@@ -1,4 +1,4 @@
-const {apiKey} = require('./config.js');
+
 const tl = gsap.timeline();
 
 gsap.registerPlugin(MotionPathPlugin);
@@ -25,7 +25,7 @@ ScrollTrigger.create({
 const reports = document.getElementsByClassName("reports")[0];
 let report;
 
-fetch("http://localhost:3000/" + apiKey)
+fetch("http://localhost:3000/whatsanapikey")
   .then(res => res.json())
   .then(data => {
     console.log(data);
